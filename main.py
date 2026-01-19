@@ -15,6 +15,9 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 NIFTY_TOKEN = 256265
 
+os.environ["TZ"] = "Asia/Kolkata"
+time.tzset()
+
 STOP_PCT   = 0.12    # stop loss %
 TARGET_PCT = 0.24    # 2x stop
 
